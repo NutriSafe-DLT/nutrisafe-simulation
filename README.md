@@ -1,4 +1,4 @@
-# NutriSafe - Simulationsmodelle zur Resilienzanalyse mit den Krisenszenarien Kontamination, IT-Vorfall und Pandemie
+# NutriSafe - Simulationsmodelle zur Resilienzanalyse von Food Supply Chains mit den Krisenszenarien Kontamination, IT-Vorfall und Pandemie
 
 Die Simulationsmodelle wurden im Rahmen des Forschungsprojekts [NutriSafe](https://nutrisafe.de) entwickelt und sind Bestandteil des [NutriSafe Toolkits](https://nutrisafe.de/toolkit). Sie dienen zur Analyse der Resilienz von Food Supply Chains anhand exemplarischer [Szenarien](NutriSafe_Toolkit_Szenarien_DE.pdf).
 
