@@ -1,6 +1,8 @@
 # Simulationsmodell: IT-Vorfall oder Pandemie (Szenario Weichkäse)
 Das Modell erlaubt die Simulation der Krisenszenarien IT-Vorfall (in Form einer sich ausbreitenden Schadsoftware) und Pandemie. Das Modell wurde von Jens Blume mit Unterstützung durch Manfred Hofmeier am Institut für Schutz und Zuverlässigkeit der Universität der Bundeswehr München entwickelt.
 
+Das Simulationsmodell wurde im Rahmen des Forschungsprojekts [NutriSafe](https://nutrisafe.de) entwickelt und ist Bestandteil des [NutriSafe Toolkits](https://nutrisafe.de/toolkit).
+
 ## Anwendung
 ![Screenshot](../screenshots/mdl_screenshot_weichkaese_it-vorfall_pandemie.png)
 Mit dem Modell können die folgenden Krisenszenarien simuliert werden. Dabei wird die Resilienz primär über die Bedarfsdeckung beim Endverbraucher bemessen.
