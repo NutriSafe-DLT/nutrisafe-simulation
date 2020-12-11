@@ -25,7 +25,16 @@ Die Krise Pandemie wird mit dem Button "Pandemie starten" ausgelöst. Dabei kön
 ### Simulation des potentiellen Einflusses von DLT
 Um den möglichen Einfluss der Nutzung von Distributed-Ledger-Technologie (DLT) auf den Verlauf von Krisenszenarien zu untersuchen, können die Simulationsmodelle wie folgt angewandt werden:
 
-TBD
+#### DLT im Krisenszenario IT-Vorfall
+Der Einfluss von DLT auf das Krisenszenario IT-Vorfall kann durch Variation der folgenden Parameter untersucht werden:
+
+* Produktionseinbußen: Da in einer DLT die Daten weniger anfällig für illegitime Veränderungen etwa durch Schadsoftware sind (Integrität) und die wichtigsten Daten (z.B. zur Chargendokumentation) weinterhin verfügbar sind, kann ein geringer Faktor für die Produktionseinbußen angenommen werden.
+* Ausbreitungswahrscheinlichkeit: Wird mehr Interaktion entlang der Wertschöpfungskette (z.B. Übermittlung von Daten) mittels DLT abgewickelt, wird weniger über klassische Kanäle wie etwa Email kommuniziert, welche eine Schadsoftware übertragen können. Daher kann eine geringere Ausbreitungswahrscheinlichkeit angenommen werden.
+
+#### DLT im Krisenszenario Pandemie
+Der Einfluss von DLT auf das Krisenszenario Pandemie kann durch Variation der folgenden Parameter untersucht werden:
+
+* Anteil betroffener Agenten:
 
 ## Analyse
 TBD
