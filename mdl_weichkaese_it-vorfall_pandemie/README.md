@@ -1,5 +1,5 @@
 # Simulationsmodell: IT-Vorfall oder Pandemie (Szenario Weichkäse)
-Das Modell erlaubt die Simulation der Krisenszenarien IT-Vorfall (in Form einer sich ausbreitenden Schadsoftware) und Pandemie. Das Modell wurde von Jens Blume mit Unterstützung durch Manfred Hofmeier am Institut für Schutz und Zuverlässigkeit der Universität der Bundeswehr München entwickelt.
+Das AnyLogic-Simulationsmodell erlaubt die Simulation der Krisenszenarien IT-Vorfall (in Form einer sich ausbreitenden Schadsoftware) und Pandemie. Das Modell wurde von Jens Blume mit Unterstützung durch Manfred Hofmeier am Institut für Schutz und Zuverlässigkeit der Universität der Bundeswehr München entwickelt.
 
 Das Simulationsmodell wurde im Rahmen des Forschungsprojekts [NutriSafe](https://nutrisafe.de) entwickelt und ist Bestandteil des [NutriSafe Toolkits](https://nutrisafe.de/toolkit).
 
