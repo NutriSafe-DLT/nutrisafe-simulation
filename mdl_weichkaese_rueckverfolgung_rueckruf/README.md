@@ -1,5 +1,5 @@
 # Simulationsmodell: Rückverfolgung und Rückruf (Szenario Weichkäse)
-Das Modell erlaubt die Simulation des Krisenszenarios Kontamintation (Rückverfolgung und Rückruf). Das Modell wurde von Manfred Hofmeier am Institut für Schutz und Zuverlässigkeit der Universität der Bundeswehr München entwickelt.
+Das AnyLogic-Simulationsmodell erlaubt die Simulation des Krisenszenarios Kontamintation (Rückverfolgung und Rückruf). Das Modell wurde von Manfred Hofmeier am Institut für Schutz und Zuverlässigkeit der Universität der Bundeswehr München entwickelt.
 
 Das Simulationsmodell wurde im Rahmen des Forschungsprojekts [NutriSafe](https://nutrisafe.de) entwickelt und ist Bestandteil des [NutriSafe Toolkits](https://nutrisafe.de/toolkit).
 
