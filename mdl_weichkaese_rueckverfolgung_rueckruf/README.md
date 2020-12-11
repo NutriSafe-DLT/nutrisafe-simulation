@@ -2,7 +2,7 @@
 Das Modell erlaubt die Simulation des Krisenszenarios Kontamintation (Rückverfolgung und Rückruf). Das Modell wurde von Manfred Hofmeier am Institut für Schutz und Zuverlässigkeit der Universität der Bundeswehr München entwickelt.
 
 ## Anwendung
-![Screenshot](../screenshots/mdl_screenshot_bioschinken_it-vorfall_pandemie.png)
+![Screenshot](../screenshots/mdl_screenshot_weichkaese_rueckverfolgung.png)
 Die Krise (Kontamination von Milch) wird mit dem Button "infect milk" bzw. "infect milk permanently" ausgelöst.
 
 Bei "infect milk" wird einmalig eine Charge Milch bei einem zufälligen Milchproduzenten kontaminiert, während die nachfolgenden Chargen wieder kontaminationsfrei sind.
