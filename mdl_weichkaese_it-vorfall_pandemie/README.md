@@ -2,7 +2,7 @@
 Das Modell erlaubt die Simulation der Krisenszenarien IT-Vorfall (in Form einer sich ausbreitenden Schadsoftware) und Pandemie. Das modell wurde von Jens Blume mit Unterstützung durch Manfred Hofmeier am Institut für Schutz und Zuverlässigkeit der Universität der Bundeswehr München entwickelt.
 
 ## Anwendung
-![Screenshot](../screenshots/mdl_screenshot_weickaese_it-vorfall_pandemie.png)
+![Screenshot](../screenshots/mdl_screenshot_weichkaese_it-vorfall_pandemie.png)
 Mit dem Modell können die folgenden Krisenszenarien simuliert werden. Dabei wird die Resilienz primär über die Bedarfsdeckung beim Endverbraucher bemessen.
 
 ### Simulation des Krisenszenarios IT-Vorfall
