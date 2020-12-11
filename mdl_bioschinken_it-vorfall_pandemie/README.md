@@ -3,6 +3,16 @@ Das Modell erlaubt die Simulation der Krisenszenarien IT-Vorfall (in Form einer 
 
 ## Anwendung
 ![Screenshot](../screenshots/mdl_screenshot_bioschinken_it-vorfall_pandemie.png)
+
+### Simulation des Krisenszenarios IT-Vorfall
+TBD
+
+### Simulation des Krisenszenarios Pandemie
+TBD
+
+### Simulation des potentiellen Einflusses von DLT
+Um den möglichen Einfluss der Nutzung von Distributed-Ledger-Technologie (DLT) auf den Verlauf von Krisenszenarien zu untersuchen, können die Simulationsmodelle wie folgt angewandt werden:
+
 TBD
 
 ## Analyse
