@@ -1,5 +1,5 @@
 # Simulationsmodell: IT-Vorfall oder Pandemie (Szenario Bio-Kochschinken)
-Das Modell erlaubt die Simulation der Krisenszenarien IT-Vorfall (in Form einer sich ausbreitenden Schadsoftware) und Pandemie. Das modell wurde von Jens Blume mit Unterstützung durch Manfred Hofmeier am Institut für Schutz und Zuverlässigkeit der Universität der Bundeswehr München entwickelt.
+Das Modell erlaubt die Simulation der Krisenszenarien IT-Vorfall (in Form einer sich ausbreitenden Schadsoftware) und Pandemie. Das Modell wurde von Jens Blume mit Unterstützung durch Manfred Hofmeier am Institut für Schutz und Zuverlässigkeit der Universität der Bundeswehr München entwickelt.
 
 ## Anwendung
 ![Screenshot](../screenshots/mdl_screenshot_bioschinken_it-vorfall_pandemie.png)
