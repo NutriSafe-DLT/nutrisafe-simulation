@@ -109,6 +109,113 @@
 			</ScaleRuler>
 			<CurrentLevel>1582618888878</CurrentLevel>
 			<ConnectionsId>1582618888874</ConnectionsId>
+			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1608190614237</Id>
+					<Name><![CDATA[contamination]]></Name>
+					<X>1080</X><Y>530</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[-1]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1608190638265</Id>
+					<Name><![CDATA[contamination_found]]></Name>
+					<X>1080</X><Y>560</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[-1]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1608190643521</Id>
+					<Name><![CDATA[contamination_cleared]]></Name>
+					<X>1080</X><Y>620</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[-1]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1608190736683</Id>
+					<Name><![CDATA[reason_found]]></Name>
+					<X>1080</X><Y>590</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[-1]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1608194552597</Id>
+					<Name><![CDATA[days_until_detection]]></Name>
+					<X>800</X><Y>590</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1608200991301</Id>
+					<Name><![CDATA[traceback_days]]></Name>
+					<X>800</X><Y>610</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1608201017647</Id>
+					<Name><![CDATA[recall_days]]></Name>
+					<X>800</X><Y>630</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+			</Variables>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1582618888874</Id>
@@ -773,7 +880,7 @@
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[100]]></Code>
+						<Code><![CDATA[20]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1525,7 +1632,8 @@
                         <EmbeddedIcon>false</EmbeddedIcon>	
 						<TextColor>-65536</TextColor>
 						<Enabled>true</Enabled>
-						<ActionCode><![CDATA[randomWhere(farmers, v -> v.inState(Farmer.CollectingMilk)).lot.contaminated = true;]]></ActionCode>
+						<ActionCode><![CDATA[randomWhere(farmers, v -> v.inState(Farmer.CollectingMilk)).lot.contaminated = true;
+contamination = time();]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<Font Name="Courier New" Size="14" Style="0"/>
@@ -1957,7 +2065,10 @@
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1582624412683" Target="1582624662287" Trigger="message">
-						<Action><![CDATA[lot = new Lot(contaminating);]]></Action>
+						<Action><![CDATA[lot = new Lot(contaminating);
+if(contaminating && main.contamination == -1){
+	main.contamination = time();
+}]]></Action>
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
@@ -3511,6 +3622,10 @@ if(need > 0){
 if(lc != null){
 
 	if(lot != null && lot.contaminated){
+		if(contaminationHistory == 0){
+			main.contamination_found = time();
+			main.days_until_detection = differenceInCalendarUnits(SECOND, main.contamination, main.contamination_found);
+		}
 		contaminationHistory++;
 		send("INFECTION", main.authority);
 	}
@@ -4767,6 +4882,8 @@ if(msg.contaminated)
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="190" Height="30">
+						<EntryAction><![CDATA[main.reason_found = time();]]></EntryAction>
+						<ExitAction><![CDATA[main.traceback_days = differenceInCalendarUnits(SECOND, main.contamination_found, main.reason_found);]]></ExitAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -4959,6 +5076,8 @@ for(Retailer r: main.retailers){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="190" Height="30">
+						<EntryAction><![CDATA[main.reason_found = time();]]></EntryAction>
+						<ExitAction><![CDATA[main.traceback_days = differenceInCalendarUnits(SECOND, main.contamination_found, main.reason_found);]]></ExitAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -4971,6 +5090,8 @@ for(Retailer r: main.retailers){
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
+						<EntryAction><![CDATA[main.contamination_cleared = time();]]></EntryAction>
+						<ExitAction><![CDATA[main.recall_days = differenceInCalendarUnits(SECOND, main.reason_found, main.contamination_cleared);]]></ExitAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
