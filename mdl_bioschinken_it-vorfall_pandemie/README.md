@@ -39,7 +39,7 @@ Der Einfluss von DLT auf das Krisenszenario Pandemie kann durch Variation der fo
 * Anteil betroffener Agenten: Findet mehr digitale Kommunikation und Dokumentenübergabe statt, reduziert das physische Kontakte zwischen den Akteuren. Damit kann ein geringerer Anteil an betroffenen Akteuren angenommen werden.
 
 ## Analyse
-Die Resilienz wird in diesem Modell über die Bedarfsdeckung beim Endverbraucher bemessen. Es sollten hierfür mehrere Iterationen der Simulation je Parametereinstellung durchgeführt werden, da einige Abläufe von zufälligen Werten abhängen.
+Die Resilienz wird in diesem Modell über die Bedarfsdeckung beim Endverbraucher bemessen (Integral des ungedeckten Bedarfs über die Zeit). Es sollten hierfür mehrere Iterationen der Simulation je Parametereinstellung durchgeführt werden, da einige Abläufe von zufälligen Werten abhängen.
 
 ## Lizenz
 ![CC-BY](https://i.creativecommons.org/l/by/4.0/88x31.png)
